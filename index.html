@@ -21,7 +21,23 @@
   <img src="imagenes/borrador.png" alt="Borrador" />
   <img src="imagenes/crayolas.png" alt="Crayolas" />
 </div>
+<a href="https://mapcarta.com/W329872822" target="_blank">📍 Ver ubicación</a>
 
+<h2>Comentarios</h2>
+<input id="coment" placeholder="Escribe un comentario" />
+<button onclick="comentar()">Enviar</button>
+<div id="lista"></div>
+
+<script>
+  function comentar() {
+    const c = document.getElementById("coment");
+    if (!c.value) return;
+    const p = document.createElement("p");
+    p.textContent = c.value;
+    document.getElementById("lista").appendChild(p);
+    c.value = "";
+  }
+</script>
 
       </body>
 </html>
