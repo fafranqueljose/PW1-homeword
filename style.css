@@ -2,13 +2,28 @@ h1 {
   text-align: center;
 }
 
-img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.galeria img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  padding: 10px;
+  background: #4dd2ff;
+  border: 5px solid #000;
+  box-shadow: 8px 8px 0 #000;
+}
+
+.galeria img:nth-child(even) {
+  background: #7dff8a;
+}
+
+.galeria img:nth-child(3n) {
+  background: #ff9f4d;
 }
